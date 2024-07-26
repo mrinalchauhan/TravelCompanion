@@ -21,7 +21,7 @@ const Navbar=()=>{
             <div className=" w-5 h-0.5 bg-black"></div>
         </div>
 
-        <div className={`${isMenu ? "flex overflow-auto flex-col absolute top-10 w-full" : "hidden md:flex" } gap-5 md:flex-row md:static text-bold text-lg md:w-auto text-center font-semibold px-[10%] p-5  `}>
+        <div className={`${isMenu ? "flex  flex-col absolute top-10 w-full" : "hidden md:flex" } gap-5 md:flex-row md:static text-bold text-lg md:w-auto text-center font-semibold px-[10%] p-5 overflow-auto flex-col fixed top-16 left-0 w-full bg-white z-50  text-bold  `}>  {/*  z-index imp here for mobile screen navigation bar */}
             {/* {links?.map((link)=>(<div> <Link> <span> {link.text} </span> </Link> </div>))} */}
             {links?.map((link)=>(<div key={link.link}><Link className={`${pathname==link.link ? "text-yellow-600" : "text-black"}`} href={link.link} exact={link.exact}><span className={link.text}>{link.text}</span></Link></div>))}
         </div>

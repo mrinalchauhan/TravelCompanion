@@ -6,7 +6,7 @@ import  SelectForm  from "@/components/SelectForm";
 import { pickupTime } from "@/constants/appdata";
 import CitySelect from "./CitySelect";  
 import { Country , State, City} from "country-state-city"; // using npm add country-state-city
-import Map from "@/components/Map";
+import MapComponent from "@/components/Map";
 import dynamic from "next/dynamic";
 
 export const StepOne=({form})=>{
@@ -38,8 +38,8 @@ console.log(getCities); */
     [getSource,getDestination]);
     return(
         <>
-        <div className=" gap-2 mx-10 md:mx-[10%] my-10  ">   {/*grid grid-cols-1 md:grid-cols-2}  when adding map do this for grid  */}
-           <div className="border border-5 border-solid border-black">
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-3 mx-10 md:mx-[10%] my-10  ">   {/*grid grid-cols-1 md:grid-cols-2}  when adding map do this for grid  */}
+           <div className="border border-5 border-double shadow-black shadow-lg border-black">
             <Form {...form}>
               <form className="w-full  p-8 shadow-lg border-spacing-2 ">
                   <DateTimeForm id="pickupdate" label="Pick-Up Date" control={form.control}/>
@@ -53,9 +53,9 @@ console.log(getCities); */
             </div>
 
              {/* Map */}
-            {/* <div className="border border-5 border-solid border-black flex justify-start flex-col ">
-               <Map getSource={getSource} getDestination={getDestination}/>
-            </div> */}
+            <div className="border border-5 border-double shadow-lg shadow-black border-black flex justify-start flex-col ">
+               <MapComponent getSource={getSource} getDestination={getDestination}/>
+            </div>
         </div>
         </>
     )

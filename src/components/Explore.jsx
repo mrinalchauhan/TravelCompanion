@@ -7,7 +7,7 @@ const Explore =()=>{
     return(
        <section className="px-6 py-10 bg-gradient-to-t from-violet-400 to bg-slate-100 ">
           <div className={`${styles.innerWidth} mx-auto flex flex-col`}>
-            <TitleText title={<span className="text-gray-900 font-serif text-black">Why ride with us?</span>}/>
+            <TitleText title={<span className=" font-serif text-black">Why ride with us?</span>}/>
           </div>
 
           <div className=" flex lg:flex-row flex-col my-9 min-h-[50vh] gap-8 lg:mx-32">
