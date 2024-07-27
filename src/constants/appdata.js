@@ -50,21 +50,21 @@ export const exploreWorlds = [
       imgUrl: "/banner1.jpeg",
       title: "Secure, Dependable, and Opulent",
       description:
-        "At Limolux, we understand your desires – a seasoned chauffeur behind the wheel, complemented by a flawlessly stylish ride.",
+        " We understand your desires  a seasoned chauffeur behind the wheel, complemented by a flawlessly stylish ride.",
     },
     {
       id: "world-2",
-      imgUrl: "/banner1.jpeg",
+      imgUrl: "/car1.png",
       title: "Vehicles For Any Occasion",
       description:
-        "From Unmatched Luxury to Spacious Comfort: Limolux Awaits Your Selection!",
+        "From Unmatched Luxury to Spacious Comfort:Awaits Your Selection!",
     },
     {
       id: "world-3",
-      imgUrl: "/banner1.jpeg",
-      title: "Need Wedding Transportation?",
+      imgUrl: "/car2.png",
+      title: "Need Transparent Pricing? ",
       description:
-        "On your wedding day, Limolux delivers the ultimate luxury ride for an unforgettable journey.",
+        "Easily select from a variety of vehicle options and pay only for the distance traveled, with no hidden fees or extra charges.",
     },
   ];
 

@@ -2,7 +2,7 @@ import React, {useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { getDistance } from "@/lib/distance";
 const StepFour=({form})=>{
-    const router=useRouter();
+   // const router=useRouter();
     const [price,setPrice]=useState(0);
     const {imgUrl,transfertype,title, firstname, lastname , email, phoneNumber, comment, source, destination} = form.getValues();
 
@@ -19,10 +19,10 @@ const StepFour=({form})=>{
         }
     },[source, destination]);
 
-    const Submit = async () => {
-        const url = await PaymentMethod({ ...form.getValues(), price });
-        router.push(url);
-      };
+    // const Submit = async () => {
+    //     const url = await PaymentMethod({ ...form.getValues(), price });
+    //     router.push(url);
+    //   };
 
     return(
         <>
@@ -65,7 +65,7 @@ const StepFour=({form})=>{
 
                             <button
                                 className="bg-third-color text-white font-bold w-full py-2.5 px-4 rounded-md"
-                                onClick={Submit}>
+                                >  {/*  *onClick={Submit} */}
                                    Pay Now
                             </button>
 
